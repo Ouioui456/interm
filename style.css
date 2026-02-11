@@ -7,3 +7,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
   }
+
+.card {
+    background: white; 
+    padding: 2rem; 
+    border-radius: 20px; 
+    text-align: center; 
+    main-width: 300px; 
+}
