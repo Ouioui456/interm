@@ -32,3 +32,4 @@ fetch('weather.json')
         console.log("Donnée extraite :", premiereTemp);
     })       
     .catch(erreur => console.error("Erreur de lecture :", erreur));
+}
