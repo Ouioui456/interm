@@ -19,7 +19,7 @@ button {
     transition: transform 0.2s, background 0.3s;
   }
 
-.search-container {
+.search-container input {
     background-color: #FFFFFF;
     color: black;
     border: none;
