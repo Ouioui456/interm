@@ -1,3 +1,21 @@
+const form = document.querySelector('.search-container'); 
+const input = document.querySelector('input[name="q"]'); 
+
+form.addEventListener('submit', function(event) {
+   event.preventDefault() ; 
+
+    const recherche = input.value.trim().toLowerCase(); 
+
+    if (recherche === "berlin") { 
+        meteoberlin(); 
+    } else { 
+        console.log("Ville non reconnue : " + recherche); 
+    }
+});
+
+function meteoberlin () {
+    const affichage = document.getElementById('affichage-meteo'); 
+    affichage.innerHTML = "
 // 1. On appelle bien le fichier local
 fetch('weather.json')
     .then(reponse => reponse.json())
@@ -12,5 +30,5 @@ fetch('weather.json')
         zoneAffichage.innerHTML = `La météo à Berlin est de ${premiereTemp}${unite}`;
         
         console.log("Donnée extraite :", premiereTemp);
-    })
+    })       
     .catch(erreur => console.error("Erreur de lecture :", erreur));
