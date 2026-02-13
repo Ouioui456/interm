@@ -33,7 +33,7 @@ const UserView = document.getElementById('user-view');
 const QuizzContainer = document.getElementByID('quizz-container'); 
 const Back = document.getElementById('back'); 
 
-launcher.addEventListener('click', function(),  {
+launcher.addEventListener('click', function()  {
   if (questionsTableau.length === 0){
     alert("Action bloquée"); 
     return; 
