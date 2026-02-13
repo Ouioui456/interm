@@ -30,7 +30,7 @@ console.log("Tableau mis à jour", questionTableau);
 });
 //Passons au côté utilisateur
 const UserView = document.getElementById('user-view'); 
-const QuizzContainer = document.getElementByID('quizz-container'); 
+const QuizzContainer = document.getElementById('quizz-container'); 
 const Back = document.getElementById('back'); 
 
 launcher.addEventListener('click', function()  {
