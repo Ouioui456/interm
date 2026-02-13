@@ -8,6 +8,14 @@
     <section id="creator-view">
       <h1> Bienvenue dans le mode créateur </h1>
       <form id="quizz-edition">
+        <input type="text" id="question-input" placeholder="Quelle est votre question ?" required>
+
+  <div class="answers-group">
+    <input type="text" class="answer-input" placeholder="Réponse 1" required>
+    <input type="text" class="answer-input" placeholder="Réponse 2" required>
+    <input type="text" class="answer-input" placeholder="Réponse 3" required>
+    <input type="text" class="answer-input" placeholder="Réponse 4" required>
+  </div>
         <button id="submit">Submit</button>
       </form>
       <div id="questioncounter"> Nombre de questions ajoutées : 0</div>
@@ -20,5 +28,6 @@
       </div>
       <button id="back"></button>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
