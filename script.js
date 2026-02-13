@@ -15,7 +15,7 @@ quizzEdition.addEventListener('submit', function(event) {
     const r3 = document.getElementById('ans3').value;
     const r4 = document.getElementById('ans4').value;
   const nouvelleQuestion = {
-    titre : quest; 
+    titre : quest, 
     choix: [r1,r2,r3,r4],
     bonnereponse : 0
 }; 
