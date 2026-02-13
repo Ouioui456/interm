@@ -8,6 +8,7 @@ const launcher = document.getElementById('launcher');
 let questionsTableau = []; 
 //Ecoute de l'enregistrement des questions
 quizzEdition.addEventListener('submit', function(event) {
+  event.preventDefault(); 
   //récupération des valeurs
   const quest = document.getElementById('question-input').value;
     const r1 = document.getElementById('ans1').value;
@@ -19,10 +20,9 @@ quizzEdition.addEventListener('submit', function(event) {
     choix: [r1,r2,r3,r4],
     bonnereponse : 0
 }; 
-EditionTableau.push(nouvelleQuestion); 
-quizzEdition.reset; 
+questionTableau.push(nouvelleQuestion); 
+quizzEdition.reset(); 
 console.log("Tableau mis à jour", questionsTableau); 
-  event.preventDefault(); 
   console.log("all good"); 
   const qinput = document.getElementById('question-input').value;
   console.log("question enregistrée" + qinput);
