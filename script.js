@@ -28,3 +28,16 @@ console.log("Tableau mis à jour", questionTableau);
   console.log("question enregistrée" + qinput);
   document.getElementById('question-input').value = "";
 });
+//Passons au côté utilisateur
+const UserView = document.getElementById('user-view'); 
+const QuizzContainer = document.getElementByID('quizz-container'); 
+const Back = document.getElementById('back'); 
+
+launcher.addEventListener('click', function(),  {
+  if (questionsTableau.length === 0){
+    alert("Action bloquée"); 
+    return; 
+} else {
+  creatorView.classList.add('hidden');
+}
+}); 
