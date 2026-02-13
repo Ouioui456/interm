@@ -7,3 +7,7 @@ const.launcher = document.getElementById('launcher');
 //stockage des questions
 let questionsTableau = []; 
 //Ecoute de l'enregistrement des questions
+quizzEdition.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+  console.log("all good"); 
+});
