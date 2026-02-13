@@ -22,7 +22,7 @@ quizzEdition.addEventListener('submit', function(event) {
 }; 
 questionTableau.push(nouvelleQuestion); 
 quizzEdition.reset(); 
-console.log("Tableau mis à jour", questionsTableau); 
+console.log("Tableau mis à jour", questionTableau); 
   console.log("all good"); 
   const qinput = document.getElementById('question-input').value;
   console.log("question enregistrée" + qinput);
