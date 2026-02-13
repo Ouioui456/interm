@@ -5,7 +5,7 @@ const submit = document.getElementById('submit');
 const questionCounter = document.getElementById('questioncounter'); 
 const launcher = document.getElementById('launcher');
 //stockage des questions
-let questionsTableau = []; 
+let questionTableau = []; 
 //Ecoute de l'enregistrement des questions
 quizzEdition.addEventListener('submit', function(event) {
   event.preventDefault(); 
