@@ -29,7 +29,6 @@ console.log("Tableau mis à jour", questionTableau);
   console.log("question enregistrée" + qinput);
   document.getElementById('question-input').value = "";
 });
-let qcount = 0;
 submit.addEventListener('click', function() {
   qcount = qcount+1; 
   count.textContent = qcount;
