@@ -20,7 +20,7 @@ quizzEdition.addEventListener('submit', function(event) {
   const nouvelleQuestion = {
     titre : quest, 
     choix: [r1,r2,r3,r4],
-    bonnereponse : selectedRadio.value; 
+    bonnereponse : selectedRadio.value
 }; 
   const selectedRadio = document.querySelector('input[name="correct-answer"]:checked');
     if (!selectedRadio) {
