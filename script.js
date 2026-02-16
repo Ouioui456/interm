@@ -1,4 +1,5 @@
 //Ajout des éléments créateur du HTML 
+const qcount = document.getElementById('count');
 const creatorView = document.getElementById('creatorview');
 const quizzEdition = document.getElementById('quizz-edition');
 const submit = document.getElementById('submit');
@@ -28,6 +29,12 @@ console.log("Tableau mis à jour", questionTableau);
   console.log("question enregistrée" + qinput);
   document.getElementById('question-input').value = "";
 });
+let qcount = 0;
+submit.addEventListener('click', function() {
+  qcount = qcount+1; 
+  count.textContent = qcount;
+});
+  
 //Passons au côté utilisateur
 const UserView = document.getElementById('user-view'); 
 const QuizzContainer = document.getElementById('quizz-container'); 
@@ -40,4 +47,5 @@ launcher.addEventListener('click', function()  {
 } else {
   creatorView.classList.add('hidden');
 }
-}); 
+});
+
