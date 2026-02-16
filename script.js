@@ -18,7 +18,7 @@ quizzEdition.addEventListener('submit', function(event) {
   const nouvelleQuestion = {
     titre : quest, 
     choix: [r1,r2,r3,r4],
-    bonnereponse : 0
+    bonnereponse : 0 
 }; 
 questionTableau.push(nouvelleQuestion); 
 quizzEdition.reset(); 
@@ -34,7 +34,7 @@ const QuizzContainer = document.getElementById('quizz-container');
 const Back = document.getElementById('back'); 
 
 launcher.addEventListener('click', function()  {
-  if (questionsTableau.length === 0){
+  if (questionTableau.length === 0){
     alert("Action bloquée"); 
     return; 
 } else {
