@@ -1,5 +1,6 @@
 //Ajout des éléments créateur du HTML 
 const compteurElt = document.getElementById('count');
+const selectedRadio = document.querySelector('input[name="correct-answer"]:checked');
 const creatorView = document.getElementById('creatorview');
 const quizzEdition = document.getElementById('quizz-edition');
 const submit = document.getElementById('submit');
@@ -22,7 +23,6 @@ quizzEdition.addEventListener('submit', function(event) {
     choix: [r1,r2,r3,r4],
     bonnereponse : selectedRadio.value
 }; 
-  const selectedRadio = document.querySelector('input[name="correct-answer"]:checked');
     if (!selectedRadio) {
         alert("Choisis une bonne réponse !");
         return; 
