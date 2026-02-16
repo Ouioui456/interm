@@ -1,6 +1,5 @@
 //Ajout des éléments créateur du HTML 
 const compteurElt = document.getElementById('count');
-const selectedRadio = document.querySelector('input[name="correct-answer"]:checked');
 const creatorView = document.getElementById('creatorview');
 const quizzEdition = document.getElementById('quizz-edition');
 const submit = document.getElementById('submit');
@@ -13,6 +12,7 @@ let questionTableau = [];
 quizzEdition.addEventListener('submit', function(event) {
   event.preventDefault(); 
   //récupération des valeurs
+  const selectedRadio = document.querySelector('input[name="correct-answer"]:checked');
   const quest = document.getElementById('question-input').value;
     const r1 = document.getElementById('ans1').value;
     const r2 = document.getElementById('ans2').value;
