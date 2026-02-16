@@ -5,6 +5,7 @@ const quizzEdition = document.getElementById('quizz-edition');
 const submit = document.getElementById('submit');
 const questionCounter = document.getElementById('questioncounter'); 
 const launcher = document.getElementById('launcher');
+let qcount = 0;
 //stockage des questions
 let questionTableau = []; 
 //Ecoute de l'enregistrement des questions
@@ -19,8 +20,14 @@ quizzEdition.addEventListener('submit', function(event) {
   const nouvelleQuestion = {
     titre : quest, 
     choix: [r1,r2,r3,r4],
-    bonnereponse : 0 
+    bonnereponse : selectedRadio.value; 
 }; 
+  const selectedRadio = document.querySelector('input[name="correct-answer"]:checked');
+    if (!selectedRadio) {
+        alert("Choisis une bonne réponse !");
+        return; 
+    }
+    const bonneReponseIndex = selectedRadio.value;
 questionTableau.push(nouvelleQuestion); 
 quizzEdition.reset(); 
 console.log("Tableau mis à jour", questionTableau); 
@@ -29,7 +36,6 @@ console.log("Tableau mis à jour", questionTableau);
   console.log("question enregistrée" + qinput);
   document.getElementById('question-input').value = "";
 });
-let qcount = 0;
 submit.addEventListener('click', function() {
   qcount = qcount+1; 
   compteurElt.textContent = qcount;
