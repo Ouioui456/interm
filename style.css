@@ -24,3 +24,7 @@ button {
     transform: scale(1.05); /* Le bouton grossit un peu au survol */
     background-color: #667eea;
   }
+
+.hidden {
+  display: none;
+}
