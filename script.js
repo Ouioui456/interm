@@ -53,5 +53,6 @@ launcher.addEventListener('click', function()  {
 } else {
   creatorView.classList.add('hidden');
 }
+  console.log(questionTableau[0].titre);
 });
 
