@@ -54,5 +54,15 @@ launcher.addEventListener('click', function()  {
   creatorView.classList.add('hidden');
 }
   console.log(questionTableau[0].titre);
+  const titre = document.createElement('h2');
+  titre.textContent = questionTableau[0].titre;
+  QuizzContainer.appendChild(titre); 
+  questionTableau[0].choix.forEach(function(uneReponse) {
+  
+    const bouton = document.createElement('button');
+    bouton.textContent = uneReponse;
+    QuizzContainer.appendChild(bouton);
+    
+});
 });
 
